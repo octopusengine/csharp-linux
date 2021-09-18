@@ -1,0 +1,43 @@
+----------------mono---------------------------
+https://www.tutorialspoint.com/executing-chash-code-in-linux
+
+----------------dotnet---->
+
+https://docs.microsoft.com/cs-cz/dotnet/core/install/linux-ubuntu
+
+https://docs.microsoft.com/cs-cz/dotnet/core/install/linux-ubuntu#2004-
+
+---1--- api ms key
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+
+---2--- sdk
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-5.0
+
+
+
+---3--- runtime
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-5.0
+  
+--------------------------------------------
+sample1.cs ->  
+dotnet new console --output sample1
+dotnet run --project sample1
+
+--------------------------------------------
+  
+  
+  
+https://www.tutorialsteacher.com/csharp/first-csharp-program  
+  
+https://docs.microsoft.com/cs-cz/dotnet/csharp/tour-of-csharp/tutorials/hello-world
+
+
+
